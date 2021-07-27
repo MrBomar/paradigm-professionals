@@ -1,0 +1,11 @@
+{
+  "name": "paradigm-professionals",
+  "version": "1.0.0",
+  "description": "WGU UX Design Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leslie C. Bomar III",
+  "license": "ISC"
+}

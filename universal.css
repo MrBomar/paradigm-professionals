@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+}
+
+header {
+    display: inline-flex;
+    background-color: darkblue;
+}
+
+header > img {
+    height: 25vw;
+    width: 25vw;
+    max-width: 25%;
+    margin: 0px;
+    background-color: white;
+}
+
+header > h2 {
+    display: flexbox;
+    width: 75vw;
+    background-color: darkblue;
+    color: white;
+    font-style: italic;
+    margin: 0px;
+    align-self: center;
+    text-align: center;
+}
+
+
+@media (orientation:portrait) {
+    #menuButton {
+        visibility: visible
+
+    }
+    
+    #MenuContainer {
+        visibility: hidden;
+    } 
+}

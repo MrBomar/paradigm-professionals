@@ -14,6 +14,20 @@ body {
     visibility: hidden;
 }
 
+nav > a {
+    user-select: none;
+}
+
+footer {
+    background-color: var(--Silver);
+    color: var(--Midnight-Blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.FooterButton {
+    user-select: none;
+}
+
 @media (orientation:portrait) and (max-width: 600px) {
     :root {
         --Hamburger-Button-Border-Thickness: 0.25vh;
@@ -47,7 +61,7 @@ body {
         text-align: center;
     }
 
-    .navButton:hover {
+    .NavButton:hover {
         background-color: var(--Midnight-Blue);
     }
 
@@ -120,5 +134,38 @@ body {
         align-self: center;
         text-align: center;
         font-size: large;
+    }
+
+    #FooterImage {
+        content: url(./assets/BalloonLogo-Large.png);
+        height: var(--Header-Height);
+        width: var(--Header-Height);
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: 2;
+    }
+
+    footer > div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer > div > h2 {
+        align-self: center;
+    }
+
+    footer > div > a {
+        text-decoration: none;
+        font-size: 1em;
+        color: var(--Midnight-Blue);
+        width: calc(100vw / 5);
+        text-align: center;
+    }
+
+    .FooterButton:hover {
+        background-color: var(--Dim-Gray);
+        color: white;
     }
 }

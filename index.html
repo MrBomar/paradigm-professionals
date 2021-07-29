@@ -5,6 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='universal.css'/>
+    <style>
+        /* Here we will place styling specific to this page */
+
+        #NavHomeButton > div{
+            background-color: var(--Midnight-Blue);
+            color: var(--Silver);
+        }
+
+        @media (max-width: 400px) {
+            /* Use this area to specify small images */
+            #ArticleOneImage { content: url(); }
+
+            #ArticleTwoImage { content: url(); }
+
+            #ArticleThreeImage { content: url(); }
+
+            #ArticleFourImage { content: url(); }
+        }
+
+        @media (max-width: 800px) {
+            /* Use this area to specify medium images */
+            #ArticleOneImage { content: url(); }
+
+            #ArticleTwoImage { content: url(); }
+
+            #ArticleThreeImage { content: url(); }
+
+            #ArticleFourImage { content: url(); }
+        }
+
+        @media (max-width: 1200px) {
+            /* Use this area to specify large images */
+            #ArticleOneImage { content: url(); }
+
+            #ArticleTwoImage { content: url(); }
+
+            #ArticleThreeImage { content: url(); }
+
+            #ArticleFourImage { content: url(); }
+        }
+
+        @media (min-width: 1201px) {
+            /* Use this area to specify huge images */
+            #ArticleOneImage { content: url(); }
+
+            #ArticleTwoImage { content: url(); }
+
+            #ArticleThreeImage { content: url(); }
+
+            #ArticleFourImage { content: url(); }
+        }
+
+    </style>
     <title>Paradigm Pet Professionals: Home</title>
 </head>
 <body>
@@ -18,18 +71,43 @@
             <span></span>
         </label>
         <nav>
-            <a href='./index.html'class='NavButton'><div class='NavButton'><h5>Home</h5></div></a>
-            <a href='./cats.html' class='NavButton'><div class='NavButton'><h5>Cats</h5></div></a>
-            <a href='./dogs.html' class='NavButton'><div class='NavButton'><h5>Dogs</h5></div></a>
-            <a href='./small-pets.html' class='NavButton'><div class='NavButton'><h5>Small Pets</h5></div></a>
-            <a href='./consultation.html' class='NavButton'><div class='NavButton'><h5>Consultation</h5></div></a>
+            <a href='./index.html'class='NavButton' id="NavHomeButton"><div class='NavButton'><h5>Home</h5></div></a>
+            <a href='./cats.html' class='NavButton' id="NavCatsButton"><div class='NavButton'><h5>Cats</h5></div></a>
+            <a href='./dogs.html' class='NavButton' id="NavDogsButton"><div class='NavButton'><h5>Dogs</h5></div></a>
+            <a href='./small-pets.html' class='NavButton' id="NavSmallPetsButton"><div class='NavButton'><h5>Small Pets</h5></div></a>
+            <a href='./consultation.html' class='NavButton' id="NavConsultationButton"><div class='NavButton'><h5>Consultation</h5></div></a>
         </nav>
     </header>
     <main>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>
+            <img id='ArticleOneImage'>
+            <p></p>
+        </article>
+        <article>
+            <img id='ArticleTwoImage'>
+            <p></p>
+        </article>
+        <article>
+            <img id='ArticleThreeImage'>
+            <p></p>
+        </article>
+        <article>
+            <img id='ArticleFourImage'>
+            <p></p>
+        </article>
     </main>
+    <footer>
+        <div>
+            <img id="FooterImage">
+            <h2>PARADIGM PET PROFESSIONALS</h2>
+        </div>
+        <div>
+            <a href='./index.html'class='FooterButton'><div class='FooterButton'><h5>Home</h5></div></a>
+            <a href='./cats.html' class='FooterButton'><div class='FooterButton'><h5>Cats</h5></div></a>
+            <a href='./dogs.html' class='FooterButton'><div class='FooterButton'><h5>Dogs</h5></div></a>
+            <a href='./small-pets.html' class='FooterButton'><div class='FooterButton'><h5>Small Pets</h5></div></a>
+            <a href='./consultation.html' class='FooterButton'><div class='FooterButton'><h5>Consultation</h5></div></a>
+        </div>
+    </footer>
 </body>
 </html>

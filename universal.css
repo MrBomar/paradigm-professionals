@@ -21,19 +21,20 @@ body {
         background-color: var(--Blue-Sky);
         align-content: space-between;
         width: 100vw;
-        height: 8vh;
     }
     
     #HamburgerButton {
+        position: absolute;
+        top: 0px;
         visibility: visible;
         display: block;
-        float: right;
         height: calc(7vh - 6px);
         width: calc(7vh - 6px);
         background-color: var(--Dim-Gray);
         border: 1px solid black;
         border-radius: 10%;
         margin: .75vh;
+        right: 0px;
     }
 
     #HamburgerButton:active {
@@ -53,9 +54,23 @@ body {
         align-content: space-between;
         display: block;
     }
+
+    #HamburgerCheck {
+        visibility: visible;
+        display: block;
+        float: right;
+        height: calc(7vh - 6px);
+        width: calc(7vh - 6px);
+        border-radius: 10%;
+        margin: .75vh;
+    }
+
+    #HamburgerCheck:checked ~ header {
+        background-color: white;
+    }
     
     #MenuContainer {
-        visibility: hidden;
+        display: none;
     } 
 
     #headerLogo {

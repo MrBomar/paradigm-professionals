@@ -15,41 +15,66 @@ body {
 }
 
 @media (orientation:portrait) and (max-width: 600px) {
-    #menuButton {
-        visibility: visible
+    header {
+        display: inline-block;
+        flex-direction: row;
+        background-color: var(--Blue-Sky);
+        align-content: space-between;
+        width: 100vw;
+        height: 8vh;
+    }
+    
+    #HamburgerButton {
+        visibility: visible;
+        display: block;
+        float: right;
+        height: calc(7vh - 6px);
+        width: calc(7vh - 6px);
+        background-color: var(--Dim-Gray);
+        border: 1px solid black;
+        border-radius: 10%;
+        margin: .75vh;
+    }
+
+    #HamburgerButton:active {
+        background-color: var(--Silver);
+    }
+
+    #HamburgerButton:active > span {
+        background-color: var(--Dim-Gray);
+    }
+
+    #HamburgerButton > span {
+        margin-top: calc(5vh / 4);
+        margin-left: 1vh;
+        width: 4vh;
+        height: 2px;
+        background-color: #BDBDBD;
+        align-content: space-between;
+        display: block;
     }
     
     #MenuContainer {
         visibility: hidden;
     } 
 
-    header {
-        display: inline-flex;
-        background-color: darkblue;
-    }
-
     #headerLogo {
-        content: url(TypedLogo-Small.png);
+        content: url(./assets/TypedLogo-Large.png);
         height: 8vh;
-        width: auto;
-    }
-    
-    header > img {
-        height: 25vw;
-        width: 25vw;
-        max-width: 25%;
-        margin: 0px;
+        width: 18vh;
         background-color: white;
+        padding: 0px 1vh 0px 1vh;
     }
     
-    header > h2 {
-        display: flexbox;
-        width: 75vw;
+    #HeaderSlogan {
+        display: none;
+        width: calc(100vw - 20vh);
         background-color: darkblue;
         color: white;
         font-style: italic;
         margin: 0px;
         align-self: center;
         text-align: center;
+        font-size: large;
     }
 }

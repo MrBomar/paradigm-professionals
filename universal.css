@@ -28,6 +28,26 @@ footer {
     user-select: none;
 }
 
+/* The following section is for assigning images based on device width */
+
+@media (max-width: 400px) {
+    #headerLogo { content: url(./assets/TypedLogo-Small.png)}
+    #FooterImage { content: url(./assets/BalloonLogo-Small.png)}
+}
+
+@media (max-width: 800px) {
+    #headerLogo { content: url(./assets/TypedLogo-Medium.png)}
+    #FooterImage {content: url(./assets/BalloonLogo-Medium.png)}
+}
+
+@media (max-width: 1200) {
+    #headerLogo {content: url(./assets/TypedLogo-Large.png)}
+}
+
+@media (min-width: 1201) {
+    #headerLogo {content: url(./assets/TypedLogo-Huge.png)}
+}
+
 @media (orientation:portrait) and (max-width: 600px) {
     :root {
         --Hamburger-Button-Border-Thickness: 0.25vh;
@@ -117,7 +137,6 @@ footer {
     }
 
     #headerLogo {
-        content: url(./assets/TypedLogo-Large.png);
         height: var(--Header-Height);
         width: 18vh;
         background-color: white;
@@ -137,7 +156,6 @@ footer {
     }
 
     #FooterImage {
-        content: url(./assets/BalloonLogo-Large.png);
         height: var(--Header-Height);
         width: var(--Header-Height);
     }

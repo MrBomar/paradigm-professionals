@@ -1,0 +1,178 @@
+:root {
+    --Hamburger-Button-Border-Thickness: 0.25vh;
+    --Hamburger-Button-Size: calc(7vh - calc(var(--Hamburger-Button-Border-Thickness) * 2));
+    --Header-Height: 8vh;
+}
+
+article {
+    width: 100vw;
+}
+
+article > img {
+    width: 100%;
+    height: auto;
+}
+
+article > p {
+    margin: 20px;
+    line-height: 1.5em;
+}
+
+article > ul {
+    margin: 20px;
+    list-style-type: circle;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 2;
+    flex-direction: row;
+    background-color: var(--Blue-Sky);
+    align-content: space-between;
+    width: 100vw;
+}
+
+nav {
+    display: none;
+    justify-content: space-evenly;
+    background-color: var(--Dim-Gray);
+    border: 1px solid black;
+    border-bottom: none;
+    opacity: 1;
+}
+
+nav > a {
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.NavButton:hover {
+    background-color: var(--Midnight-Blue);
+}
+
+.NavButton > h5 {
+    border-bottom: 1px solid black;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding: 1em;
+}
+
+#HamburgerButton {
+    position: absolute;
+    top: 0px;
+    visibility: visible;
+    display: block;
+    height: var(--Hamburger-Button-Size); 
+    width: var(--Hamburger-Button-Size);
+    background-color: var(--Dim-Gray);
+    border: var(--Hamburger-Button-Border-Thickness) solid black;
+    border-radius: 10%;
+    margin: calc(calc(var(--Header-Height) - 7vh) / 2);
+    right: 0px;
+}
+
+#HamburgerButton > span {
+    margin-top: calc(calc(var(--Hamburger-Button-Size) - calc(var(--Hamburger-Button-Border-Thickness) * 3)) / 4);
+    margin-left: calc(calc(var(--Hamburger-Button-Size) - 4vh) / 2);
+    width: 4vh;
+    height: var(--Hamburger-Button-Border-Thickness);
+    background-color: #BDBDBD;
+    align-content: space-between;
+    display: block;
+}
+
+#HamburgerCheck {
+    display: none;
+    height: calc(7vh - 6px);
+    width: calc(7vh - 6px);
+    border-radius: 10%;
+    margin: .75vh;
+}
+
+#HamburgerCheck:checked ~ label {
+    background-color: var(--Silver);
+}
+
+#HamburgerCheck:checked ~ label > span {
+    background-color: var(--Dim-Gray);
+}
+
+#HamburgerCheck:checked ~ nav {
+    display: block;
+    height: calc(100vh - var(--Header-Height));
+}
+
+#headerLogo {
+    height: var(--Header-Height);
+    width: 18vh;
+    max-width: 50vw;
+    background-color: white;
+    padding: 0px 1vh 0px 1vh;
+    content: url(./assets/TypedLogo-Small.png);
+}
+
+#HeaderSlogan {
+    display: none;
+    width: calc(100vw - 20vh);
+    background-color: darkblue;
+    color: white;
+    font-style: italic;
+    margin: 0px;
+    align-self: center;
+    text-align: center;
+    font-size: large;
+}
+
+#FooterImage {
+    height: var(--Header-Height);
+    width: var(--Header-Height);
+    content: url(./assets/BalloonLogo-Small.png);
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > div > h2 {
+    align-self: center;
+    margin: 0px 10px;
+    font-size: 3vh;
+}
+
+footer > div > a {
+    text-decoration: none;
+    font-size: 3.5vw;
+    width: calc(100vw / 5);
+    text-align: center;
+}
+
+.SquareImage {
+    height: 150px;
+    width: 150px;
+    float: right;
+    margin-right: 20px;
+}
+
+article:nth-child(even) > .SquareImage {
+    float: left;
+    margin: 0px 5px 0px 20px;
+}
+
+/* Each image tag will recieve a unique ID */
+/* Below we will specify the image to be used for each image tag */
+
+#BabyCat {content: url(./assets/BabyCat-Small.png)}
+#Cat {content: url(./assets/Cat-Small.png)}
+#CatDog {content: url(./assets/CatDog-Small.png)}
+#CatHighFive {content: url(./assets/CatHighFive-Small.png)}
+#Kitten {content: url(./assets/Kitten-Small.png)}
+#FerretHempOil {content: url(./assets/FerretHempOil-Small.png)}
+#OldManCat {content: url(./assets/OldManCat-Small.png)}
+#Python {content: url(./assets/Python-Small.png)}

@@ -165,6 +165,33 @@ article:nth-child(even) > .SquareImage {
     margin: 0px 5px 0px 20px;
 }
 
+main > p {
+    margin: 20px 20px;
+}
+
+.ImageLinkBlock {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 50vw 50vw 50vw;
+}
+
+.ImageLink {
+    width: 50vw;
+    height: 50vw;
+    background-size:cover;
+    display: flex;
+    align-items:flex-end;
+    border: 1px solid black;
+}
+
+.ImageLink > div {
+    background-color: rgba(255,255,255, .7);
+    height: 12.5vw;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
 /* Each image tag will recieve a unique ID */
 /* Below we will specify the image to be used for each image tag */
 
@@ -172,7 +199,16 @@ article:nth-child(even) > .SquareImage {
 #Cat {content: url(./assets/Cat-Small.png)}
 #CatDog {content: url(./assets/CatDog-Small.png)}
 #CatHighFive {content: url(./assets/CatHighFive-Small.png)}
-#Kitten {content: url(./assets/Kitten-Small.png)}
+#Chinchilla {background-image: url(./assets/Chinchilla-Small.png)}
+#DogBath {content: url(./assets/DogBath-Small.png)}
+#DogDiet {content: url(./assets/DogDiet-Small.png)}
+#DogMedicine {content: url(./assets/DogMedicine-Small.png)}
 #FerretHempOil {content: url(./assets/FerretHempOil-Small.png)}
+#Gerbil {background-image: url(./assets/Gerbil-Small.png)}
+#GuineaPig {background-image: url(./assets/GuineaPig-Small.png)}
+#Hamster {background-image: url(./assets/Hamster-Small.png)}
+#HermitCrab {background-image: url(./assets/HermitCrab-Small.png)}
+#Kitten {content: url(./assets/Kitten-Small.png)}
+#Mouse {background-image: url(./assets/Mouse-Small.png)}
 #OldManCat {content: url(./assets/OldManCat-Small.png)}
 #Python {content: url(./assets/Python-Small.png)}

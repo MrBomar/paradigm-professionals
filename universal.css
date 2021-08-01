@@ -30,6 +30,7 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 1;
 }
 
 main {
@@ -39,6 +40,10 @@ main {
 
 #menuButton {
     visibility: hidden;
+}
+
+nav {
+    z-index: 0;
 }
 
 nav > a {

@@ -1,6 +1,6 @@
 :root {
-    --Hamburger-Button-Border-Thickness: 0.25vh;
-    --Hamburger-Button-Size: calc(7vh - calc(var(--Hamburger-Button-Border-Thickness) * 2));
+    --Hamburger-Button-Border-Thickness: 0.5vh;
+    --Hamburger-Button-Size: 7vh;
 }
 
 article {
@@ -22,9 +22,24 @@ article > ul {
     list-style-type: circle;
 }
 
+form {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: 35px;
+}
+
+form > input {
+    height: 25px;
+}
+
+form > input[type='submit'], input[type='reset'] {
+    height: 35px;
+    width: 100px;
+}
+
 header {
     display: grid;
-    grid-template-rows: 2;
     flex-direction: row;
     background-color: var(--Blue-Sky);
     align-content: space-between;
@@ -32,12 +47,17 @@ header {
 }
 
 nav {
-    display: none;
+    position: fixed;
+    top: var(--Header-Height);
+    left: 100vw;
+    height: 100vh;
+    width: 100vw;
     justify-content: space-evenly;
     background-color: var(--Dim-Gray);
     border: 1px solid black;
     border-bottom: none;
     opacity: 1;
+    transition: 0.25s;
 }
 
 nav > a {
@@ -58,27 +78,24 @@ nav > a {
 }
 
 #HamburgerButton {
-    position: absolute;
+    position: fixed;
+    right: 0px;
     top: 0px;
     visibility: visible;
     display: block;
     height: var(--Hamburger-Button-Size); 
     width: var(--Hamburger-Button-Size);
-    background-color: var(--Dim-Gray);
-    border: var(--Hamburger-Button-Border-Thickness) solid black;
-    border-radius: 10%;
-    margin: calc(calc(var(--Header-Height) - 7vh) / 2);
-    right: 0px;
+    z-index: 2;
+    cursor: pointer;
 }
 
 #HamburgerButton > span {
-    margin-top: calc(calc(var(--Hamburger-Button-Size) - calc(var(--Hamburger-Button-Border-Thickness) * 3)) / 4);
-    margin-left: calc(calc(var(--Hamburger-Button-Size) - 4vh) / 2);
-    width: 4vh;
-    height: var(--Hamburger-Button-Border-Thickness);
+    margin: 9px 6px;
+    width: 30px;
+    height: 2px;
     background-color: #BDBDBD;
-    align-content: space-between;
     display: block;
+    transition: all 0.2s ease-in;
 }
 
 #HamburgerCheck {
@@ -89,17 +106,20 @@ nav > a {
     margin: .75vh;
 }
 
-#HamburgerCheck:checked ~ label {
-    background-color: var(--Silver);
-}
-
-#HamburgerCheck:checked ~ label > span {
-    background-color: var(--Dim-Gray);
-}
-
 #HamburgerCheck:checked ~ nav {
-    display: block;
-    height: calc(100vh - var(--Header-Height));
+    left: 0px;
+}
+
+#HamburgerCheck:checked ~ label > #Span1 {
+    transform: translateY(11px) rotate(45deg);
+}
+
+#HamburgerCheck:checked ~ label > #Span2 {
+    opacity: 0;
+}
+
+#HamburgerCheck:checked ~ label > #Span3 {
+    transform: translateY(-11px) rotate(-45deg);
 }
 
 #headerLogo {

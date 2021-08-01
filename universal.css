@@ -3,6 +3,7 @@
     --Blue-Sky: #6699CC;
     --Dim-Gray: #676767;
     --Silver: #BDBDBD;
+    --Header-Height: 8vh;
 }
 
 * {
@@ -21,6 +22,19 @@ a:hover, a:active {
 body {
     margin: 0px;
     box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+main {
+    margin-top: var(--Header-Height);
+    overflow: hidden;
 }
 
 #menuButton {

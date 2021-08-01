@@ -1,7 +1,6 @@
 :root {
     --Hamburger-Button-Border-Thickness: 0.25vh;
     --Hamburger-Button-Size: calc(7vh - calc(var(--Hamburger-Button-Border-Thickness) * 2));
-    --Header-Height: 8vh;
 }
 
 article {

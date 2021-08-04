@@ -1,6 +1,9 @@
+/*This styling will be used for handheld devices in Portrait and under 400px wide */
+
 :root {
     --Hamburger-Button-Border-Thickness: 0.5vh;
     --Hamburger-Button-Size: 7vh;
+    --Header-Height: 8vh;
 }
 
 article {
@@ -10,11 +13,6 @@ article {
 article > img {
     width: 100%;
     height: auto;
-}
-
-article > p {
-    margin: 20px;
-    line-height: 1.5em;
 }
 
 article > ul {
@@ -38,14 +36,6 @@ form > input[type='submit'], input[type='reset'] {
     width: 100px;
 }
 
-header {
-    display: grid;
-    flex-direction: row;
-    background-color: var(--Blue-Sky);
-    align-content: space-between;
-    width: 100vw;
-}
-
 nav {
     position: fixed;
     top: var(--Header-Height);
@@ -53,8 +43,6 @@ nav {
     height: 100vh;
     width: 100vw;
     justify-content: space-evenly;
-    background-color: var(--Dim-Gray);
-    border: 1px solid black;
     border-bottom: none;
     opacity: 1;
     transition: 0.25s;
@@ -62,18 +50,10 @@ nav {
 
 nav > a {
     font-size: 2em;
-    font-weight: lighter;
-    text-align: center;
-}
-
-.NavButton:hover {
-    background-color: var(--Midnight-Blue);
 }
 
 .NavButton > h5 {
     border-bottom: 1px solid black;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
     padding: 1em;
 }
 
@@ -120,6 +100,10 @@ nav > a {
 
 #HamburgerCheck:checked ~ label > #Span3 {
     transform: translateY(-11px) rotate(-45deg);
+}
+
+header {
+    height: var(--Header-Height);
 }
 
 #headerLogo {
@@ -189,26 +173,19 @@ main > p {
 }
 
 .ImageLinkBlock {
-    display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 50vw 50vw 50vw;
+    margin-left: 0px;
 }
 
 .ImageLink {
     width: 50vw;
     height: 50vw;
-    background-size:cover;
-    display: flex;
-    align-items:flex-end;
-    border: 1px solid black;
 }
 
 .ImageLink > div {
-    background-color: rgba(255,255,255, .7);
     height: 12.5vw;
     width: 50vw;
-    display: flex;
-    align-items: center;
 }
 
 /* Each image tag will recieve a unique ID */

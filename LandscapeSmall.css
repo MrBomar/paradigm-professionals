@@ -1,0 +1,137 @@
+/*This styling is for smal mobile devices in landscape mode*/
+
+:root {
+    --Header-Height: calc(25vw / 3);
+    --Image-Link-Size: calc(calc(80vw - 40px) / 3);
+}
+
+article > img {
+    width: 30vw;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+}
+
+article:nth-child(odd) > img {
+    float: left;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+#headerLogo {
+    content: url(./assets/TypedLogo-Small.png);
+    height: calc(25vw / 3);
+    width: 20vw;
+}
+
+header {
+    grid-template-columns: 20vw auto;
+}
+
+header > h2 {
+    font-size: 2.8vw;
+    text-align: center;
+}
+
+main, footer {
+    margin-left: 20vw;
+}
+
+nav {
+    top: var(--Header-Height);
+    width: 20vw;
+    border-left: none;
+}
+
+.NavButton {
+    height: calc(calc(100vh - var(--Header-Height)) / 5);
+    display: flex;
+    align-items: center;
+}
+
+.NavButton > h5 {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+footer > div:nth-child(1n) {
+    display: inline-flex;
+}
+
+footer > div:nth-child(2n) {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > div > h2 {
+    align-self: center;
+    margin: 0px 10px;
+    font-size: 3vw;
+}
+
+#FooterImage {
+    height: var(--Header-Height);
+    width: var(--Header-Height);
+    content: url(./assets/BalloonLogo-Small.png);
+    margin: 5px;
+}
+
+form {
+    max-width: calc(80vw - 40px);
+    grid-template-columns: 30% 50%;
+    grid-auto-rows: auto;
+}
+
+form > input, form > label {
+    margin: 5px;
+    height: 25px;
+}
+
+form > div {
+    grid-column: 2;
+    right: 0px;
+}
+
+#Reset, #Submit {
+    height: 25px;
+    width: 100px;
+    margin: 5px;
+}
+
+.ImageLinkBlock {
+    grid-template-columns: var(--Image-Link-Size) var(--Image-Link-Size) var(--Image-Link-Size);
+    grid-template-rows: var(--Image-Link-Size) var(--Image-Link-Size);
+}
+
+.ImageLink {
+    width: var(--Image-Link-Size);
+    height: var(--Image-Link-Size);
+}
+
+.ImageLink > div {
+    height: calc(var(--Image-Link-Size) / 5);
+    width: var(--Image-Link-Size);
+}
+
+#BabyCat {content: url(./assets/BabyCat-Small.png)}
+#Cat {content: url(./assets/Cat-Small.png)}
+#CatDog {content: url(./assets/CatDog-Small.png)}
+#CatHighFive {content: url(./assets/CatHighFive-Small.png)}
+#Chinchilla {background-image: url(./assets/Chinchilla-Small.png)}
+#DogBath {content: url(./assets/DogBath-Small.png)}
+#DogDiet {content: url(./assets/DogDiet-Small.png)}
+#DogMedicine {content: url(./assets/DogMedicine-Small.png)}
+#FerretHempOil {content: url(./assets/FerretHempOil-Small.png)}
+#Gerbil {background-image: url(./assets/Gerbil-Small.png)}
+#GuineaPig {background-image: url(./assets/GuineaPig-Small.png)}
+#Hamster {background-image: url(./assets/Hamster-Small.png)}
+#HermitCrab {background-image: url(./assets/HermitCrab-Small.png)}
+#Kitten {content: url(./assets/Kitten-Small.png)}
+#Mouse {background-image: url(./assets/Mouse-Small.png)}
+#OldManCat {content: url(./assets/OldManCat-Small.png)}
+#Python {content: url(./assets/Python-Small.png)}

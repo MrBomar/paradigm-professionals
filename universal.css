@@ -3,7 +3,6 @@
     --Blue-Sky: #6699CC;
     --Dim-Gray: #676767;
     --Silver: #BDBDBD;
-    --Header-Height: 8vh;
 }
 
 * {
@@ -19,6 +18,11 @@ a:hover, a:active {
     background-color: var(--Silver);
 }
 
+article > p, article > h2 {
+    margin: 20px;
+    line-height: 1.5em;
+}
+
 body {
     margin: 0px;
     box-sizing: border-box;
@@ -26,11 +30,37 @@ body {
     overflow-x: hidden;
 }
 
+form {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: 35px;
+}
+
+form > input {
+    height: 25px;
+}
+
+form > input[type='submit'], input[type='reset'] {
+    height: 35px;
+    width: 100px;
+}
+
 header {
+    display: grid;
     position: fixed;
+    flex-direction: row;
     top: 0px;
     left: 0px;
     z-index: 1;
+    background-color: var(--Midnight-Blue);
+    align-content: space-between;
+    width: 100vw;
+}
+
+#HeaderSlogan {
+    color: var(--Silver);
+    font-style: italic;
 }
 
 main {
@@ -38,16 +68,27 @@ main {
     overflow: hidden;
 }
 
-#menuButton {
-    visibility: hidden;
+main > h1, main > div, main > p {
+    margin: 20px;
+}
+
+#HamburgerButton, #HamburgerCheck {
+    display: none;
 }
 
 nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
     z-index: 0;
+    background-color: var(--Dim-Gray);
+    border: 1px solid black;
 }
 
 nav > a {
     user-select: none;
+    font-weight: lighter;
+    text-align: center;
 }
 
 nav > a {
@@ -58,6 +99,15 @@ nav > a {
 
 nav > a:link, a:visited, a:hover, a:active {
     color: white;
+    background-color: var(--Midnight-Blue);
+}
+
+.NavButton > h5 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.NavButton:hover {
     background-color: var(--Midnight-Blue);
 }
 
@@ -83,6 +133,23 @@ footer > div > a {
 .FooterButton:hover {
     background-color: var(--Dim-Gray);
     color: white;
+}
+
+.ImageLinkBlock {
+    display: grid;
+}
+
+.ImageLink {
+    background-size:cover;
+    display: flex;
+    align-items:flex-end;
+    border: 1px solid black;
+}
+
+.ImageLink > div {
+    background-color: rgba(255,255,255, .7);
+    display: flex;
+    align-items: center;
 }
 
 #UtilityLinks {

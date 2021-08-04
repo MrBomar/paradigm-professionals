@@ -1,0 +1,14 @@
+header {
+    height: 20vw;
+}
+
+header > h2 {
+    font-size: 3vw;
+}
+
+nav {
+    top: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}

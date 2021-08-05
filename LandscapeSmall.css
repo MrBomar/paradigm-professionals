@@ -8,59 +8,26 @@
 article > img {
     width: 30vw;
     height: auto;
-    float: right;
-    margin-right: 20px;
 }
 
 article:nth-child(odd) > img {
+    float: right;
+    margin-right: 10px;
+}
+
+article:nth-child(even) > img {
     float: left;
-    margin-right: 5px;
-    margin-left: 20px;
+    margin-right: 10px;
 }
 
-#headerLogo {
-    content: url(./assets/TypedLogo-Small.png);
-    height: var(--Header-Height);
-    width: auto;
-}
-
-header {
-    grid-template-columns: 20vw auto;
-}
-
-header > h2 {
-    font-size: 2.8vw;
-    text-align: center;
-}
-
-main, footer {
-    width: 80vw;
-}
-
-nav {
-    top: var(--Header-Height);
-    width: 20vw;
-    left: 80vw;
-    border-left: none;
-}
-
-.NavButton > div {
-    height: calc(calc(100vh - var(--Header-Height)) / 5);
-    display: flex;
-    align-items: center;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0px 0px 1px;
-}
-
-.NavButton > div > h5 {
-    width: 100%;
-    text-align: center;
+article > ul {
+    margin-left: 30vw;
 }
 
 footer {
     display: grid;
     grid-template-rows: 2;
+    width: 80vw;
 }
 
 footer > div:nth-child(1n) {
@@ -99,6 +66,50 @@ form > input, form > label {
 form > div {
     grid-column: 2;
     right: 0px;
+}
+
+#HeaderLogo {
+    content: url(./assets/TypedLogo-Small.png);
+    height: var(--Header-Height);
+    width: auto;
+}
+
+header {
+    grid-template-columns: 20vw auto;
+}
+
+header > h2 {
+    font-size: 2.8vw;
+    text-align: center;
+}
+
+main {
+    width: calc(80vw - 40px);
+}
+
+nav {
+    top: var(--Header-Height);
+    width: 20vw;
+    left: 80vw;
+    border-left: none;
+}
+
+.NavButton > div {
+    height: calc(calc(100vh - var(--Header-Height)) / 5);
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0px 0px 1px;
+}
+
+.NavButton > div > h5 {
+    width: 100%;
+    text-align: center;
+}
+
+p, li {
+    font-size: .9em;
 }
 
 #Reset, #Submit {

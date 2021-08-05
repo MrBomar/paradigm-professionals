@@ -101,7 +101,7 @@ header {
     height: var(--Header-Height);
 }
 
-#headerLogo {
+#HeaderLogo {
     height: var(--Header-Height);
     width: 18vh;
     max-width: 50vw;
@@ -112,34 +112,20 @@ header {
 
 #HeaderSlogan {
     display: none;
-    width: calc(100vw - 20vh);
-    background-color: darkblue;
-    color: white;
-    font-style: italic;
-    margin: 0px;
-    align-self: center;
-    text-align: center;
-    font-size: large;
 }
 
-#FooterImage {
-    height: var(--Header-Height);
-    width: var(--Header-Height);
-    content: url(./assets/BalloonLogo-Small.png);
-}
 
 footer {
     display: grid;
-    grid-template-rows: 2;
 }
 
-footer > div {
+footer > div:nth-child(2n) {
     display: flex;
     justify-content: space-evenly;
 }
 
 footer > div > h2 {
-    align-self: center;
+    text-align: right;
     margin: 0px 10px;
     font-size: 3vh;
 }
@@ -161,10 +147,6 @@ footer > div > a {
 article:nth-child(even) > .SquareImage {
     float: left;
     margin: 0px 5px 0px 20px;
-}
-
-main > p {
-    margin: 20px 20px;
 }
 
 .ImageLinkBlock {
@@ -195,6 +177,7 @@ main > p {
 #DogDiet {content: url(./assets/DogDiet-Small.png)}
 #DogMedicine {content: url(./assets/DogMedicine-Small.png)}
 #FerretHempOil {content: url(./assets/FerretHempOil-Small.png)}
+#FooterImage {background-image: url(./assets/BalloonLogo-Small.png)}
 #Gerbil {background-image: url(./assets/Gerbil-Small.png)}
 #GuineaPig {background-image: url(./assets/GuineaPig-Small.png)}
 #Hamster {background-image: url(./assets/Hamster-Small.png)}

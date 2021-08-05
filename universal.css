@@ -28,7 +28,6 @@ a:hover, a:active {
 }
 
 article > p, article > h2 {
-    margin: 20px;
     line-height: 1.5em;
 }
 
@@ -70,15 +69,12 @@ header {
 #HeaderSlogan {
     color: var(--Silver);
     font-style: italic;
+    text-align: center;
 }
 
 main {
-    margin-top: var(--Header-Height);
+    margin: var(--Header-Height) 20px 20px 20px;
     overflow: hidden;
-}
-
-main > h1, main > div, main > p {
-    margin: 20px;
 }
 
 #HamburgerButton, #HamburgerCheck {
@@ -111,19 +107,15 @@ nav {
     color: white;
 }
 
+p {
+    margin: 0px;
+}
+
 footer {
-    background-color: var(--Silver);
+    background-size: contain;
+    background-repeat: no-repeat;
     color: var(--Midnight-Blue);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-footer > div {
-    background-color: var(--Silver);
-}
-
-footer > div > a {
-    color: var(--Midnight-Blue) !important;
-    background-color: var(--Silver) !important;
 }
 
 .FooterButton {
@@ -131,7 +123,6 @@ footer > div > a {
 }
 
 .FooterButton:hover {
-    background-color: var(--Dim-Gray);
     color: white;
 }
 

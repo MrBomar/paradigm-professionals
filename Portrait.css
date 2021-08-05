@@ -1,13 +1,67 @@
 :root {
     --Header-Height: 10vh;
+    --Image-Link-Size: calc(calc(calc(100vw - 40px) / 3) - 2px);
+}
+
+article {
+    margin-top: 20px;
+    contain: content;
+}
+
+article > img {
+    width: 50vw;
+    float: right;
+}
+
+article:nth-child(odd) > img {
+    float: right;
+    margin-right: 10px;
+}
+
+article:nth-child(even) > img {
+    float: left;
+    margin-right: 10px;
+}
+
+article > ul {
+    margin-left: 50vw;
 }
 
 header {
-    height: 10vh;
+    height: var(--Header-Height);
+    grid-template-columns: calc(var(--Header-Height) * 2.34) auto;
+    align-items: center;
 }
 
-header > h2 {
-    font-size: 3vw;
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HeaderSlogan {
+    font-size: 1.8vh;
+    height: min-content;
+}
+
+#HeaderLogo {
+    height: var(--Header-Height);
+    width: calc(var(--Header-Height) * 2.34);
+}
+
+.ImageLinkBlock {
+    grid-template-columns: var(--Image-Link-Size) var(--Image-Link-Size) var(--Image-Link-Size);
+    grid-template-rows: var(--Image-Link-Size) var(--Image-Link-Size);
+}
+
+.ImageLink {
+    width: var(--Image-Link-Size);
+    height: var(--Image-Link-Size);
+}
+
+.ImageLink > div {
+    height: calc(var(--Image-Link-Size) / 5);
+    width: var(--Image-Link-Size);
 }
 
 main {
@@ -38,3 +92,23 @@ nav {
     text-align: center;
     width: inherit;
 }
+
+#BabyCat {content: url(./assets/BabyCat-Small.png)}
+#Cat {content: url(./assets/Cat-Small.png)}
+#CatDog {content: url(./assets/CatDog-Small.png)}
+#CatHighFive {content: url(./assets/CatHighFive-Small.png)}
+#Chinchilla {background-image: url(./assets/Chinchilla-Small.png)}
+#DogBath {content: url(./assets/DogBath-Small.png)}
+#DogDiet {content: url(./assets/DogDiet-Small.png)}
+#DogMedicine {content: url(./assets/DogMedicine-Small.png)}
+#FerretHempOil {content: url(./assets/FerretHempOil-Small.png)}
+#FooterImage {content: url(./assets/BalloonLogo-Small.png)}
+#Gerbil {background-image: url(./assets/Gerbil-Small.png)}
+#GuineaPig {background-image: url(./assets/GuineaPig-Small.png)}
+#Hamster {background-image: url(./assets/Hamster-Small.png)}
+#HeaderLogo {content: url(./assets/TypedLogo-Small.png)}
+#HermitCrab {background-image: url(./assets/HermitCrab-Small.png)}
+#Kitten {content: url(./assets/Kitten-Small.png)}
+#Mouse {background-image: url(./assets/Mouse-Small.png)}
+#OldManCat {content: url(./assets/OldManCat-Small.png)}
+#Python {content: url(./assets/Python-Small.png)}

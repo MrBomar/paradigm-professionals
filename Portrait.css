@@ -1,14 +1,40 @@
+:root {
+    --Header-Height: 10vh;
+}
+
 header {
-    height: 20vw;
+    height: 10vh;
 }
 
 header > h2 {
     font-size: 3vw;
 }
 
+main {
+    margin-top: calc(var(--Header-Height) * 1.5) !important;
+}
+
 nav {
-    top: 20vw;
+    top: var(--Header-Height);
+    height: calc(var(--Header-Height) / 2);
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
+}
+
+.NavButton {
+    width: calc(100vw / 5);
+    height: inherit;
+}
+
+.NavButton  > div {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.NavButton > div > h5 {
+    text-align: center;
+    width: inherit;
 }

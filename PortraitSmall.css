@@ -37,14 +37,10 @@ form > input[type='submit'], input[type='reset'] {
 }
 
 nav {
-    position: fixed;
     top: var(--Header-Height);
     left: 100vw;
     height: 100vh;
     width: 100vw;
-    justify-content: space-evenly;
-    border-bottom: none;
-    opacity: 1;
     transition: 0.25s;
 }
 

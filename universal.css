@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a, a:link, a:visited, a:hover, a:active {
@@ -78,23 +78,20 @@ main > h1, main > div, main > p {
 
 nav {
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: var(--Header-Height);
     z-index: 0;
     background-color: var(--Dim-Gray);
     border: 1px solid black;
+    justify-content: space-evenly;
+    transition: 0.25s;
 }
 
 nav > a {
     user-select: none;
     font-weight: lighter;
     text-align: center;
-}
-
-nav > a {
     text-decoration: none;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav > a:link, a:visited, a:hover, a:active {

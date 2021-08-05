@@ -42,11 +42,11 @@ nav {
     width: 100vw;
 }
 
-nav > a {
+.NavButton {
     font-size: 2em;
 }
 
-.NavButton > h5 {
+.NavButton > div > h5 {
     border-bottom: 1px solid black;
     padding: 1em;
 }

@@ -86,26 +86,21 @@ nav {
     transition: 0.25s;
 }
 
-nav > a {
+.NavButton {
     user-select: none;
     font-weight: lighter;
     text-align: center;
-    text-decoration: none;
     color: white;
 }
 
-nav > a:link, a:visited, a:hover, a:active {
-    color: white;
-    background-color: var(--Midnight-Blue);
-}
-
-.NavButton > h5 {
+.NavButton > div > h5 {
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
 
-.NavButton:hover {
+.NavButton > div:hover {
     background-color: var(--Midnight-Blue);
+    color: white;
 }
 
 footer {

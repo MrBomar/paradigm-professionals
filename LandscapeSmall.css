@@ -1,4 +1,4 @@
-/*This styling is for smal mobile devices in landscape mode*/
+/*This styling is for small mobile devices in landscape mode*/
 
 :root {
     --Header-Height: calc(25vw / 3);
@@ -20,8 +20,8 @@ article:nth-child(odd) > img {
 
 #headerLogo {
     content: url(./assets/TypedLogo-Small.png);
-    height: calc(25vw / 3);
-    width: 20vw;
+    height: var(--Header-Height);
+    width: auto;
 }
 
 header {
@@ -34,22 +34,26 @@ header > h2 {
 }
 
 main, footer {
-    margin-left: 20vw;
+    width: 80vw;
 }
 
 nav {
     top: var(--Header-Height);
     width: 20vw;
+    left: 80vw;
     border-left: none;
 }
 
-.NavButton {
+.NavButton > div {
     height: calc(calc(100vh - var(--Header-Height)) / 5);
     display: flex;
     align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0px 0px 1px;
 }
 
-.NavButton > h5 {
+.NavButton > div > h5 {
     width: 100%;
     text-align: center;
 }

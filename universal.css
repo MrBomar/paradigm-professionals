@@ -10,12 +10,21 @@
 }
 
 a, a:link, a:visited, a:hover, a:active {
-    color: var(--Midnight-Blue) !important;
+    color: var(--Midnight-Blue);
     text-decoration: none;
 }
 
 a:hover, a:active {
     background-color: var(--Silver);
+}
+
+.activePage {
+    background-color: white !important;
+    border: none !important;
+}
+
+.activePage > h5 {
+    color: var(--Blue-Sky) !important;
 }
 
 article > p, article > h2 {
@@ -81,7 +90,6 @@ nav {
     top: var(--Header-Height);
     z-index: 0;
     background-color: var(--Dim-Gray);
-    border: 1px solid black;
     justify-content: space-evenly;
     transition: 0.25s;
 }
@@ -90,12 +98,12 @@ nav {
     user-select: none;
     font-weight: lighter;
     text-align: center;
-    color: white;
 }
 
 .NavButton > div > h5 {
     margin-block-start: 0px;
     margin-block-end: 0px;
+    color: white;
 }
 
 .NavButton > div:hover {

@@ -27,6 +27,14 @@ article > ul {
     margin-left: 50vw;
 }
 
+footer > div:nth-child(1n) > h2 {
+    font-size: 3.5vw;
+}
+
+.FooterButton > h5 {
+    font-size: 2.5vw;
+}
+
 header {
     height: var(--Header-Height);
     grid-template-columns: calc(var(--Header-Height) * 2.34) auto;

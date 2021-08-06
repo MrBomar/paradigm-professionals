@@ -94,6 +94,7 @@ form > input[type='submit'], input[type='reset'] {
 header {
     display: grid;
     position: fixed;
+    grid-template-columns: auto auto;
     flex-direction: row;
     top: 0px;
     left: 0px;

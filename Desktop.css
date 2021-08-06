@@ -1,8 +1,76 @@
 :root {
-    --Header-Height: 10vh;
+    --Header-Height: 8vh;
+    --Nav-Height: 5vh;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+
+article:nth-child(odd) > img {
+    grid-column: 2;
+}
+
+article:nth-child(odd) > p, article:nth-child(odd) > div {
+    grid-column: 1;
+}
+
+article > img {
+    width: 100%;
+}
+
+#HeaderLogo {
+    content: url(./assets/TypedLogo-Large.png);
+    height:var(--Header-Height);
 }
 
 main {
+    width: calc(100vw - 40px);
     max-width: 1040px;
-    
+    margin: calc(var(--Header-Height) + var(--Nav-Height)) 20px 20px 20px;
 }
+
+nav {
+    top: var(--Header-Height);
+    height: var(--Nav-Height);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.NavButton {
+    width: calc(100vw / 5);
+    height: inherit;
+}
+
+.NavButton  > div {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.NavButton > div > h5 {
+    text-align: center;
+    width: inherit;
+    font-size: 2.5vw;
+}
+
+#BabyCat {content: url(./assets/BabyCat-Large.png)}
+#Cat {content: url(./assets/Cat-Large.png)}
+#CatDog {content: url(./assets/CatDog-Large.png)}
+#CatHighFive {content: url(./assets/CatHighFive-Large.png)}
+#Chinchilla {background-image: url(./assets/Chinchilla-Large.png)}
+#DogBath {content: url(./assets/DogBath-Large.png)}
+#DogDiet {content: url(./assets/DogDiet-Large.png)}
+#DogMedicine {content: url(./assets/DogMedicine-Large.png)}
+#FerretHempOil {content: url(./assets/FerretHempOil-Large.png)}
+#Gerbil {background-image: url(./assets/Gerbil-Large.png)}
+#GuineaPig {background-image: url(./assets/GuineaPig-Large.png)}
+#Hamster {background-image: url(./assets/Hamster-Large.png)}
+#HermitCrab {background-image: url(./assets/HermitCrab-Large.png)}
+#Kitten {content: url(./assets/Kitten-Large.png)}
+#Mouse {background-image: url(./assets/Mouse-Large.png)}
+#OldManCat {content: url(./assets/OldManCat-Large.png)}
+#Python {content: url(./assets/Python-Large.png)}

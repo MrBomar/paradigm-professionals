@@ -101,6 +101,7 @@ header {
     background-color: var(--Midnight-Blue);
     align-content: space-between;
     width: 100vw;
+    height: var(--Header-Height);
 }
 
 #HeaderSlogan {

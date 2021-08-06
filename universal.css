@@ -38,6 +38,43 @@ body {
     overflow-x: hidden;
 }
 
+footer {
+    background-image: url(./assets/BalloonLogo-Small.png);
+    background-size: 33vw;
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: var(--Midnight-Blue);
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+footer > div {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+footer > div:nth-child(1n) > h2 {
+    margin: 10px 0px 10px 5vw;
+    font-size: 4vw;
+}
+
+footer > div:nth-child(2n) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.FooterButton {
+    user-select: none;
+}
+
+.FooterButton:hover {
+    color: white;
+}
+
+.FooterButton > h5 {
+    margin: 10px 0px 20px 0px;
+}
+
 form {
     display: grid;
     margin: 20px;
@@ -109,21 +146,6 @@ nav {
 
 p {
     margin: 0px;
-}
-
-footer {
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: var(--Midnight-Blue);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.FooterButton {
-    user-select: none;
-}
-
-.FooterButton:hover {
-    color: white;
 }
 
 .ImageLinkBlock {

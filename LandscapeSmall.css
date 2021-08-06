@@ -24,32 +24,13 @@ article > ul {
     margin-left: 30vw;
 }
 
-footer {
-    display: grid;
-    grid-template-rows: 2;
+footer { 
     width: 80vw;
+    background-size: calc(33vw * .8);
 }
 
-footer > div:nth-child(1n) {
-    display: inline-flex;
-}
-
-footer > div:nth-child(2n) {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer > div > h2 {
-    align-self: center;
-    margin: 0px 10px;
+footer > div:nth-child(1n) > h2 {
     font-size: 3vw;
-}
-
-#FooterImage {
-    height: var(--Header-Height);
-    width: var(--Header-Height);
-    content: url(./assets/BalloonLogo-Small.png);
-    margin: 5px;
 }
 
 form {

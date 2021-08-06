@@ -114,29 +114,6 @@ header {
     display: none;
 }
 
-
-footer {
-    display: grid;
-}
-
-footer > div:nth-child(2n) {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer > div > h2 {
-    text-align: right;
-    margin: 0px 10px;
-    font-size: 3vh;
-}
-
-footer > div > a {
-    text-decoration: none;
-    font-size: 3.5vw;
-    width: calc(100vw / 5);
-    text-align: center;
-}
-
 .SquareImage {
     height: 150px;
     width: 150px;
@@ -177,7 +154,6 @@ article:nth-child(even) > .SquareImage {
 #DogDiet {content: url(./assets/DogDiet-Small.png)}
 #DogMedicine {content: url(./assets/DogMedicine-Small.png)}
 #FerretHempOil {content: url(./assets/FerretHempOil-Small.png)}
-#FooterImage {background-image: url(./assets/BalloonLogo-Small.png)}
 #Gerbil {background-image: url(./assets/Gerbil-Small.png)}
 #GuineaPig {background-image: url(./assets/GuineaPig-Small.png)}
 #Hamster {background-image: url(./assets/Hamster-Small.png)}

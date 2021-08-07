@@ -5,19 +5,42 @@
 
 article {
     display: grid;
-    grid-template-columns: 40% auto;
 }
 
-article:nth-child(odd) > img {
-    grid-column: 2;
-}
-
-article:nth-child(odd) > p, article:nth-child(odd) > div {
-    grid-column: 1;
+article > div {
+    display: flex;
+    align-items: center;
 }
 
 article > img {
     width: 100%;
+}
+
+article:nth-child(odd) {
+    grid-template-columns: 37% auto;
+}
+
+article:nth-child(odd) > div {
+    margin-left: 20px;
+}
+
+article:nth-child(even) {
+    grid-template-columns: auto 37%;
+}
+
+article:nth-child(even) > div {
+    grid-column: 1;
+    grid-row: 1;
+    margin-right: 20px;
+}
+
+article:nth-child(even) > img {
+    grid-column: 2;
+}
+
+#FixMe {
+    display: grid;
+    grid-column: auto auto;
 }
 
 #HeaderLogo {

@@ -23,7 +23,7 @@ article:nth-child(even) > img {
     margin-right: 10px;
 }
 
-article > ul {
+article > div > ul {
     margin-left: 50vw;
 }
 

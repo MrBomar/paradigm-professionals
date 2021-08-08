@@ -1,6 +1,10 @@
 :root {
     --Header-Height: 8vh;
     --Nav-Height: 5vh;
+    --Main-Width: calc(100vw - 40px);
+    --Main-Max-Width: 1040px;
+    --Image-Link-Size: calc(calc(var(--Main-Width) - 4px) / 3);
+    --Image-Link-Max-Size: calc(calc(var(--Main-Max-Width) - 4px) / 3);
 }
 
 article {
@@ -9,6 +13,7 @@ article {
 
 article > div {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -38,6 +43,14 @@ article:nth-child(even) > img {
     grid-column: 2;
 }
 
+footer > div:nth-child(1n) > h2 {
+    font-size: 3vw;
+}
+
+.FooterButton > h5 {
+    font-size: medium;
+}
+
 #FixMe {
     display: grid;
     grid-column: auto auto;
@@ -48,10 +61,27 @@ article:nth-child(even) > img {
     height:var(--Header-Height);
 }
 
+.ImageLinkBlock {
+    grid-template-columns: var(--Image-Link-Size) var(--Image-Link-Size) var(--Image-Link-Size);
+    grid-template-rows: var(--Image-Link-Size) var(--Image-Link-Size);
+}
+
+.ImageLink {
+    width: var(--Image-Link-Size);
+    height: var(--Image-Link-Size);
+    max-width: var(--Image-Link-Max-Size);
+    max-height: var(--Image-Link-Max-Size);
+}
+
+.ImageLink > div {
+    height: calc(var(--Image-Link-Size) / 5);
+    width: var(--Image-Link-Size);
+}
+
 main {
-    width: calc(100vw - 40px);
-    max-width: 1040px;
-    margin: calc(var(--Header-Height) + var(--Nav-Height)) 20px 20px 20px;
+    width: var(--Main-Width);
+    max-width: var(--Main-Max-Width);
+    padding: calc(var(--Header-Height) + var(--Nav-Height)) 20px 20px 20px;
 }
 
 nav {
@@ -97,3 +127,9 @@ nav {
 #Mouse {background-image: url(./assets/Mouse-Large.png)}
 #OldManCat {content: url(./assets/OldManCat-Large.png)}
 #Python {content: url(./assets/Python-Large.png)}
+
+@media screen and (orientation: portrait) {
+    footer {
+        background-size: 15vh;
+    }
+}

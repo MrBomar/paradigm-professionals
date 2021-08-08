@@ -73,7 +73,7 @@ header > div {
 }
 
 main {
-    margin-top: calc(var(--Header-Height) * 1.5) !important;
+    padding-top: calc(var(--Header-Height) * 1.5) !important;
 }
 
 nav {

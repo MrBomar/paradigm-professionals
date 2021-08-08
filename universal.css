@@ -82,13 +82,19 @@ form {
     grid-auto-rows: 35px;
 }
 
+form > div {
+    grid-column: 1 / span 2;
+    text-align: right;
+}
+
 form > input {
     height: 25px;
 }
 
-form > input[type='submit'], input[type='reset'] {
+input[type='submit'], input[type='reset'] {
     height: 35px;
     width: 100px;
+    margin: 5px 5px;
 }
 
 header {
@@ -111,8 +117,25 @@ header {
     text-align: center;
 }
 
+.ImageLinkBlock {
+    display: grid;
+}
+
+.ImageLink {
+    background-size: cover;
+    display: flex;
+    align-items:flex-end;
+    border: 1px solid black;
+}
+
+.ImageLink > div {
+    background-color: rgba(255,255,255, .7);
+    display: flex;
+    align-items: center;
+}
+
 main {
-    margin: var(--Header-Height) 20px 20px 20px;
+    padding: var(--Header-Height) 20px 20px 20px;
     overflow: hidden;
 }
 
@@ -155,7 +178,7 @@ p {
 }
 
 .ImageLink {
-    background-size:cover;
+    background-size: cover;
     display: flex;
     align-items:flex-end;
     border: 1px solid black;
@@ -170,7 +193,8 @@ p {
 #UtilityLinks {
     display: flex;
     flex-flow: row;
-    width: 100vw;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 #UtilityLinks > div {

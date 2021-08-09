@@ -100,7 +100,7 @@ input[type='submit'], input[type='reset'] {
 header {
     display: grid;
     position: fixed;
-    grid-template-columns: auto auto;
+    grid-template-columns: calc(var(--Header-Height) * 2.34) auto;
     flex-direction: row;
     top: 0px;
     left: 0px;
@@ -112,9 +112,11 @@ header {
 }
 
 #HeaderSlogan {
+    font-size: 2vw;
     color: var(--Silver);
     font-style: italic;
     text-align: center;
+    width: 100%;
 }
 
 .ImageLinkBlock {

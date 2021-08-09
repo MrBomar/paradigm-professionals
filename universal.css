@@ -112,6 +112,7 @@ header {
 }
 
 #HeaderSlogan {
+    display: block;
     font-size: 2vw;
     color: var(--Silver);
     font-style: italic;

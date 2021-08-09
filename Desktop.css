@@ -3,8 +3,9 @@
     --Nav-Height: 5vh;
     --Main-Width: calc(100vw - 40px);
     --Main-Max-Width: 1040px;
-    --Image-Link-Size: calc(calc(var(--Main-Width) - 4px) / 3);
-    --Image-Link-Max-Size: calc(calc(var(--Main-Max-Width) - 4px) / 3);
+    --Main-Calculated-Size: min(var(--Main-Width), var(--Main-Max-Width));
+    --Main-Margin: calc(calc(100vw - var(--Main-Calculated-Size)) / 2);
+    --Image-Link-Size: calc(calc(var(--Main-Calculated-Size) - 4px) / 3);
 }
 
 article {
@@ -43,12 +44,16 @@ article:nth-child(even) > img {
     grid-column: 2;
 }
 
+footer {
+    background-size: 12vh;
+}
+
 footer > div:nth-child(1n) > h2 {
-    font-size: 3vw;
+    font-size: 3vh;
 }
 
 .FooterButton > h5 {
-    font-size: medium;
+    font-size: 1.5vh;
 }
 
 #FixMe {
@@ -79,9 +84,9 @@ footer > div:nth-child(1n) > h2 {
 }
 
 main {
-    width: var(--Main-Width);
-    max-width: var(--Main-Max-Width);
+    width: var(--Main-Calculated-Size);
     padding: calc(var(--Header-Height) + var(--Nav-Height)) 20px 20px 20px;
+    margin-left: var(--Main-Margin);
 }
 
 nav {
@@ -107,7 +112,7 @@ nav {
 .NavButton > div > h5 {
     text-align: center;
     width: inherit;
-    font-size: 2.5vw;
+    font-size: 2.5vh;
 }
 
 #BabyCat {content: url(./assets/BabyCat-Large.png)}

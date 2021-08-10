@@ -115,6 +115,10 @@ nav {
     font-size: 2.5vh;
 }
 
+p, ul {
+    font-size: 1.5em;
+}
+
 #BabyCat {content: url(./assets/BabyCat-Large.png)}
 #Cat {content: url(./assets/Cat-Large.png)}
 #CatDog {content: url(./assets/CatDog-Large.png)}
@@ -135,6 +139,12 @@ nav {
 
 @media screen and (orientation: portrait) {
     footer {
-        background-size: 15vh;
+        background-size: 10vh;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    footer {
+        background-size: 10vw;
     }
 }

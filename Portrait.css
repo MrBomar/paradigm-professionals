@@ -14,17 +14,13 @@ article > img {
 }
 
 article:nth-child(odd) > img {
-    float: right;
-    margin-right: 10px;
+    float: left;
+    padding-right: 20px;
 }
 
 article:nth-child(even) > img {
-    float: left;
-    margin-right: 10px;
-}
-
-article > div > ul {
-    margin-left: 50vw;
+    float: right;
+    padding-left: 10px;
 }
 
 footer > div:nth-child(1n) > h2 {

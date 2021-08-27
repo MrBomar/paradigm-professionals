@@ -13,6 +13,7 @@ article {
 }
 
 article > img {
+    max-width: var(--Main-Width);
     width: 100%;
     height: auto;
 }
